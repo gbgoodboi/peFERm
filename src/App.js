@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import EmployeeFormComponent from './component/EmployeeFormComponent';
 import './App.css';
+import EmployeeList from './component/EmployeeList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <EmployeeFormComponent />
+      <div className='col-10 offset-1'>
+        <hr />
+      </div>
+      <EmployeeList />
     </div>
   );
 }
