@@ -7,7 +7,7 @@ class Employee extends Component {
         <tr key={emp.id}>
           <td>{emp.name}</td>
           <td>{emp.gpa}</td>
-          <td>{emp.date.toDateString()}</td>
+          <td>{emp.date.toString()}</td>
         </tr>
       )
     })
